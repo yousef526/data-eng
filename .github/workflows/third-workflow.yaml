@@ -1,4 +1,4 @@
-name: my second wf
+name: my third wf
 on:
     workflow_dispatch:
 jobs:
