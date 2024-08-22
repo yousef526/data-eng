@@ -38,8 +38,6 @@ jobs:
                 name: dragon-file
                 path: dragon
 
-          - name: unzip the dragon-file
-            run: unzip dragon-file.zip
 
           - name: read file
             run: cat dragon.txt
