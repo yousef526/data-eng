@@ -1,17 +1,21 @@
+name: my second wf
+on:
+    workflow_dispatch:
 jobs:
     abbas:
-        steps:
-            -name: install cowsay program
+      runs-on: ubuntu-latest
+      steps:
+            - name: install cowsay program
               run: sudo apt-get install cowsay -y
 
-            -name: execute cowsay program
+            - name: execute cowsay program
               run: cowsay -f dragon "Run for cover" >> dragon.txt
 
-            -name: test file exists
+            - name: test file exists
               run: grep -i "cover" dragon.txt
 
-            -name: read file
+            - name: read file
               run: cat dragon.txt
 
-            -name: check repo fils
+            - name: check repo fils
               run: ls
