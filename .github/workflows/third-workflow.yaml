@@ -10,15 +10,6 @@ jobs:
 
           - name: execute cowsay program
             run: cowsay -f dragon "Run for cover" >> dragon.txt
-
-          - name: test file exists
-            run: grep -i "cover" dragon.txt
-
-          - name: read file
-            run: cat dragon.txt
-
-          - name: check repo fils
-            run: ls
         
           - uses: actions/upload-artifact@v4
             with:
@@ -32,7 +23,7 @@ jobs:
            
           - uses: actions/download-artifact@v4
             with:
-                name: dragon-file
+                path: dragon-file
 
           - name: verify list
             run: ls -l 
