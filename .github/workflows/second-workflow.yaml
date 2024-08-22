@@ -10,11 +10,11 @@ jobs:
             - name: execute cowsay program
               run: cowsay -f dragon "Run for cover" >> dragon.txt
 
-            -name: test file exists
+            - name: test file exists
               run: grep -i "cover" dragon.txt
 
-            -name: read file
+            - name: read file
               run: cat dragon.txt
 
-            -name: check repo fils
+            - name: check repo fils
               run: ls
