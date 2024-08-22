@@ -22,8 +22,8 @@ jobs:
         
           - uses: actions/upload-artifact@v4
             with:
-                name: artifact
-                path: dragon
+                name: dragon-file
+                path: dragon.txt
 
     test-job:
       needs: first-job
@@ -32,8 +32,7 @@ jobs:
            
           - uses: actions/download-artifact@v4
             with:
-                name: artifact
-                path: dragon
+                name: dragon-file
 
           - name: verify list
             run: ls -l 
@@ -43,14 +42,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          
-          
           - uses: actions/download-artifact@v4
             with:
-                name: artifact
+                name: dragon-file
                 path: dragon
 
-          - name: unzip the file
-            run: unzip dragon.zip
+          - name: unzip the dragon-file
+            run: unzip dragon-file.zip
 
           - name: read file
             run: cat dragon.txt
