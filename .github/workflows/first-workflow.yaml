@@ -6,9 +6,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: welcome msg
-<<<<<<< HEAD
             run: echo "hello msg"
-=======
-            run: echo "hello msg"
-
->>>>>>> 27783d53864527a821ca60db90808c6d9277c099
