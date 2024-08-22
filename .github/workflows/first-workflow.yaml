@@ -1,10 +1,10 @@
 name: my first wf
 on:
-    push:
-    workflow_dispatch:
+  push:
+  workflow_dispatch:
 jobs:
-     ali:
-      runs-on: ubnutu-latest
-      steps:
-          - name: welcome msg
-            run: echo "hello msg"
+  ali:
+    runs-on: ubnutu-latest
+    steps:
+      - name: welcome msg
+          run: echo "hello msg"
