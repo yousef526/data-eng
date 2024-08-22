@@ -5,17 +5,17 @@ jobs:
     abbas:
       runs-on: ubuntu-latest
       steps:
-            - name: install cowsay program
-              run: sudo apt-get install cowsay -y
+          - name: install cowsay program
+            run: sudo apt-get install cowsay -y
 
-            - name: execute cowsay program
-              run: cowsay -f dragon "Run for cover" >> dragon.txt
+          - name: execute cowsay program
+            run: cowsay -f dragon "Run for cover" >> dragon.txt
 
-            - name: test file exists
-              run: grep -i "cover" dragon.txt
+          - name: test file exists
+            run: grep -i "cover" dragon.txt
 
-            - name: read file
-              run: cat dragon.txt
+          - name: read file
+            run: cat dragon.txt
 
-            - name: check repo fils
-              run: ls
+          - name: check repo fils
+            run: ls
