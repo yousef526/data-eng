@@ -23,7 +23,7 @@ jobs:
            
           - uses: actions/download-artifact@v4
             with:
-                path: dragon-file
+                name: dragon-file
 
           - name: verify list
             run: ls -l 
