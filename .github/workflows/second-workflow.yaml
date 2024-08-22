@@ -2,7 +2,7 @@ name: my second wf
 on:
     workflow_dispatch:
 jobs:
-    abbas:
+    abbassh:
       runs-on: ubuntu-latest
       steps:
           - name: install cowsay program
