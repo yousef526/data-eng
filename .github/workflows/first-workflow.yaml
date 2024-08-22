@@ -1,6 +1,5 @@
 name: my first wf
 on:
-    push:
     workflow_dispatch:
 jobs:
      ali:
