@@ -3,7 +3,7 @@ on:
     workflow_dispatch:
 jobs:
      ali:
-      runs-on: ubnutu-latest
+      runs-on: ubuntu-latest
       steps:
           - name: welcome msg
             run: echo "hello msg"
